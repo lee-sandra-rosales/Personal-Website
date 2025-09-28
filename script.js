@@ -41,11 +41,10 @@ const projectData = {
   "technopreneurship": {
     title: "Technopreneurship Project",
     image: "/assets/TECHNO (Copy).png",
-    description: "A comprehensive automation system designed to streamline everyday tasks and improve efficiency in home and office environments. This project combines IoT technology with user-friendly interfaces to create a seamless automation experience.",
-    technologies: ["IoT", "Python", "React", "Node.js", "MongoDB"],
+    description: "A platform where you can order or reserve your grilled food and check the delivery rel-time. This project is a user-friendly interfaces to create a seamless automation experience.",
+    technologies: ["HTML", "JavaScript", "CSS"],
     features: [
-      "Smart home automation with mobile app control",
-      "Voice command integration with popular assistants",
+      "Smart ordering app automation with mobile app control",
       "Energy consumption monitoring and optimization",
       "Real-time notifications and alerts",
       "Cross-platform compatibility"
@@ -55,7 +54,7 @@ const projectData = {
   "vision-drive": {
     title: "OJT Project - Vision Drive",
     image: "/assets/Vision Drive.png",
-    description: "Vision Drive is an innovative platform that showcases modern responsive design principles while providing valuable insights into driving behavior and safety. This project was developed during my Quality Job Training program.",
+    description: "Vision Drive is an innovative platform that showcases modern responsive design principles while providing valuable insights into driving behavior and safety. This project was developed during my On-the-Job Training.",
     technologies: ["HTML", "CSS", "JavaScript", "Firebase"],
     features: [
       "Fully responsive design for all devices",
@@ -69,11 +68,11 @@ const projectData = {
   "pending": {
     title: "Pending Projects",
     image: "/assets/IOT.jpg",
-    description: "I'm currently working on several exciting projects that push the boundaries of technology and design. These include AI-powered applications, blockchain solutions, and innovative web platforms that aim to solve real-world problems.",
-    technologies: ["AI/ML", "Blockchain", "React Native", "GraphQL", "AWS"],
+    description: "I'm currently working on several exciting IOT and Web design projects that push the boundaries of technology and design. These include AI-powered applications, Arduino, and innovative web platforms that aim to solve real-world problems.",
+    technologies: ["AI/ML", "Arduino IDE", "Visual Studio"],
     features: [
       "Artificial intelligence integration",
-      "Blockchain-based security features",
+      "Artificial intelligence automation",
       "Cross-platform mobile applications",
       "Cloud-native architecture",
       "Advanced data analytics"
