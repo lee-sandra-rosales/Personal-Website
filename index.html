@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Leanne's Portfolio - UI/UX Designer & Developer">
+  <title>Leanne | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Leanne</div>
+    <nav class="navbar" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <canvas id="shapes-bg" aria-hidden="true"></canvas>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+
+      <h1>PORTFOLIO</h1>
+      <p class="subtitle">Hi! I'm <strong>Leanne</strong></p>
+      <p class="role">UI/UX Designer & Developer</p>
+      <button class="glow-btn" id="explore-btn">Explore More</button>
+    </div>
+  </section>
+
+  <!-- Decorative divider -->
+  <div class="divider" aria-hidden="true"></div>
+
+  <!-- About -->
+  <section id="about" class="about section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2 class="section-title"><span>About</span> Me</h2>
+        <p>
+          I am a self-taught creative designer and developer passionate about crafting 
+          engaging digital experiences. My journey blends <strong>UI/UX design</strong>, 
+          <strong>frontend development</strong>, <strong>full stack projects</strong>, and <strong>quality assurance</strong>.
+        </p>
+      </div>
+      <div class="about-image">
+        <div class="image-frame">
+          <img src="assets/leeyawn.jpg" alt="Leanne Profile">
+        </div>
+        <div class="image-decoration decoration-1" aria-hidden="true"></div>
+        <div class="image-decoration decoration-2" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider flip" aria-hidden="true"></div>
+
+  <!-- Skills -->
+  <section id="skills" class="section split">
+    <h2 class="section-title"><span>My</span> Skills</h2>
+    <div class="skills-wrapper">
+      <div class="column">
+        <ul class="skills-list">
+          <li class="skill-category">Skills</li>
+          <li>Full Stack Development</li>
+          <li>Quality Assurance</li>
+          <li>Frontend Development</li>
+          <li>UI/UX Design</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <ul class="skills-list">
+          <li class="skill-category">Languages</li>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>Ionic</li>
+        </ul>
+
+        <div class="column">
+        <ul class="skills-list">
+          <li class="skill-category">Graphic Design</li>
+          <li>Figma</li> 
+          <li>Adobe</li>
+          <li>Canva</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2 class="section-title"><span>My</span> Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card" data-project="technopreneurship">
+        <div class="project-image">
+          <img src="/assets/TECHNO (Copy).png" alt="Technopreneurship Project">
+        </div>
+        <h3>Technopreneurship Project</h3>
+        <p>When meat, meet grills!</p>
+        <button class="know-more-btn">Know More</button>
+      </div>
+
+      <div class="project-card" data-project="vision-drive">
+        <div class="project-image">
+          <img src="/assets/Vision Drive.png" alt="QJT Project - Vision Drive">
+        </div>
+        <h3>OJT Project - Vision Drive</h3>
+        <p>Where they can monitor count of vehicles accordingly</p>
+        <button class="know-more-btn">Know More</button>
+      </div>
+
+      <div class="project-card" data-project="pending">
+        <div class="project-image">
+          <img src="/assets/IOT.jpg" alt="Pending IOT Project">
+        </div>
+        <h3>Pending IOT Projects</h3>
+        <p>Exciting works in progress.</p>
+        <button class="know-more-btn">Know More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img id="modal-img" src="" alt="">
+        </div>
+
+        <div class="modal-info">
+          <h2 id="modal-title"></h2>
+          <div id="modal-description"></div>
+          <div class="project-details">
+            <div class="detail-section">
+
+              <h4>Technologies Used</h4>
+              <div id="modal-technologies" class="tech-tags"></div>
+            </div>
+
+            <div class="detail-section">
+              <h4>Key Features</h4>
+              <ul id="modal-features"></ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Project Timeline</h4>
+              <p id="modal-timeline"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider flip" aria-hidden="true"></div>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title"><span>Contact</span> Me</h2>
+    <p>Email: <a href="mailto:rleannecassandra@gmail.com">rleannecassandra@gmail.com</a></p>
+    <p>Phone: +123 456 789</p>
+    
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required aria-label="Your Name">
+      <input type="email" placeholder="Your Email" required aria-label="Your Email">
+      <textarea placeholder="Message" required aria-label="Your Message"></textarea>
+      <button type="submit" class="glow-btn">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Leanne | Designed with 🌹</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
